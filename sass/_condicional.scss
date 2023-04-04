@@ -1,0 +1,11 @@
+.mybodytext {
+    background-color: white;
+
+    @if device-mobile {
+        color: blue;
+    }
+
+    @else {
+        color: $text-color;
+    }
+}

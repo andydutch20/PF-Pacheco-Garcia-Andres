@@ -1,8 +1,8 @@
 .mybodytext {
-    background-color: white;
+    background-color: rgb(244, 229, 229);
 
     @if device-mobile {
-        color: blue;
+        color: rgb(176, 171, 189);
     }
 
     @else {

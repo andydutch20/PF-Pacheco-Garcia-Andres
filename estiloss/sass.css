@@ -29,20 +29,25 @@ html body header ul li {
   margin: 0 10px;
 }
 
-* .fotosprincipales {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+/*index config fotos*/ 
 
 .fotosprincipales {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-  margin: 20px;
+  grid-template-columns: 1fr 1fr;  
 }
 
-* .thebmxpage {
+.mybodytext {
+  font-family: sans-serif;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  color: blue;
+}
+
+/* titulos header*/
+
+.thebmxpage {
   font-family: cursive;
   font-size: 70px;
   font-weight: 100;
@@ -60,12 +65,8 @@ html body header ul li {
   text-shadow: 1px 1px #ccc;
 }
 
-* .mybodytext {
-  text-align: center;
-  padding: 20px;
-  font-size: 22px;
-  color: white;
-}
+/*config body para pagina "bicicletas"*/
+
 
 .fotosdebicis {
   display: block;
@@ -88,31 +89,35 @@ html body header ul li {
 
 .titulobike1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #fff;
+  background-color: #8c1eb4;
   margin-top: 0px;
   font-weight: bold;
   font-size: 16px;
 }
 
 .bike1descripcion {
+  background-color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fff;
+  color: #110d0d;
 }
 
 .titulobike2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #fff;
+  background-color: #8c1eb4;
   margin-top: 0px;
   font-weight: bold;
   font-size: 16px;
 }
 
 .bike2descripcion {
+  background-color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #fff;
+  color: #050404;
 }
 
-* .enlancestitulo {
+/*config pagina contacto*/
+
+.enlancestitulo {
   text-align: center;
   color: antiquewhite;
   font-size: larger;
@@ -129,7 +134,9 @@ html body header ul li {
   font-size: 50px;
 }
 
-* .fotosbmx {
+/*pagina fotos config */
+
+.fotosbmx {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -164,6 +171,8 @@ html body header ul li {
   padding: 15px;
   margin: 50px;
 }
+
+/*pagina historias config*/
 
 .tituloprincipalbmx {
   text-align: center;
@@ -221,8 +230,10 @@ html body header ul li {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
+
+/*pagina deportistas config*/
 
 .seanburns {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -230,7 +241,8 @@ html body header ul li {
 }
 
 .seanburns img {
-  height: 400px;
+  height: auto;
+  max-width: 100%;
 }
 
 .garretreynolds {
@@ -239,7 +251,8 @@ html body header ul li {
 }
 
 .garretreynolds img {
-  height: 400px;
+  height: auto;
+  max-width: 100%;
 }
 
 .mikeaitken {
@@ -248,7 +261,8 @@ html body header ul li {
 }
 
 .mikeaitken img {
-  height: 400px;
+  height: auto;
+  max-width: 100%;
 }
 
 .markwebb {
@@ -257,8 +271,8 @@ html body header ul li {
 }
 
 .markwebb img {
-  height: 400px;
-  width: 650px;
+  height: auto;
+  max-width: 100%;
 }
 
 .backgroundriders {
@@ -277,6 +291,7 @@ html body header ul li {
   margin: 0 auto;
 }
 
+/*pagina footer config*/
 .site-footer {
   position: absolute;
   bottom: 0;
@@ -296,14 +311,9 @@ html body header ul li {
   font-size: 30px;
   font-weight: 100;
   text-align: left;
-  color: #64073a;
-  text-shadow: 1px 1px #ccc;
+  color: #9e6ae7;
 }
 
-.mybodytext {
-  background-color: white;
-  color: blue;
-}
 
 /* mobile query css */
 @media (max-width: 480px) {
@@ -312,19 +322,6 @@ html body header ul li {
   }
   ul {
     font-size: 16px;
-  }
-  .fotosprincipales {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
-  .chicabikecero,
-  .chicabikeuno,
-  .chicabikedos,
-  .chicabiketres {
-    width: 100%;
-    margin: 10px 0;
   }
   .mybodytext {
     font-size: 18px;
@@ -390,8 +387,7 @@ html body header ul li {
     margin: 20px;
     padding: 20px;
   }
-  .chicabikecero {
-    margin-right: 10px;
+  
   }
   .mybodytext {
     font-size: 22px;
@@ -425,4 +421,4 @@ html body header ul li {
   .bike2descripcion {
     font-size: 16px;
   }
-}/*# sourceMappingURL=sass.css.map */
+/*# sourceMappingURL=sass.css.map */

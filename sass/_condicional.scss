@@ -1,11 +1,17 @@
-.mybodytext {
-    background-color: rgb(244, 229, 229);
+/*ejemplo con condicionales */
+.bike1descripcion {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: $primary-color;
 
-    @if device-mobile {
-        color: rgb(186, 11, 11);
+    @if $primary-color==blue {
+        color: white;
+    }
+
+    @else if $primary-color==red {
+        color: yellow;
     }
 
     @else {
-        color: $text-color;
+        color: black;
     }
 }

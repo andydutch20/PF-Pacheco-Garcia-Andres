@@ -29,9 +29,11 @@ html body header ul li {
   margin: 0 10px;
 }
 
-.mybodytext {
-  background-color: rgb(244, 229, 229);
-  color: rgb(186, 11, 11);
+/*ejemplo con condicionales */
+.bike1descripcion {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: blue;
+  color: white;
 }
 
 /*ejemplo animacion */
@@ -61,15 +63,14 @@ html body header ul li {
 /*pagina index  fotos*/
 .fotosprincipales {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.fotosprincipales {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
-  margin: 20px;
+}
+
+.fotosprincipales img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*ejemplo variable*/
@@ -132,13 +133,6 @@ html body header ul li {
   background-color: #eee;
 }
 
-/*ejemplo con condicionales */
-.bike1descripcion {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: blue;
-  color: white;
-}
-
 /*ejemplo mixin */
 .titulobike2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -183,33 +177,23 @@ html body header ul li {
 }
 
 .foto1 {
-  border: 1px solid #ccc;
-  height: 400px;
-  padding: 15px;
-  margin: 50px;
+  height: auto;
+  max-width: 100%;
 }
 
 .foto2 {
-  border: 1px solid #ccc;
-  height: 400px;
-  padding: 15px;
-  margin: 50px;
+  height: auto;
+  max-width: 100%;
 }
 
 .foto3 {
-  border: 1px solid #ccc;
-  width: 600px;
-  padding: 15px;
-  height: 500px;
-  margin: 50px;
+  height: auto;
+  max-width: 100%;
 }
 
 .foto4 {
-  border: 1px solid #ccc;
-  width: 600px;
-  height: 500px;
-  padding: 15px;
-  margin: 50px;
+  height: auto;
+  max-width: 100%;
 }
 
 /*pagina historias config*/

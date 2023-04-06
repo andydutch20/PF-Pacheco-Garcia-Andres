@@ -1,4 +1,343 @@
 @import "variableglobal";
 @import "navbar";
 @import "condicional";
+@import "mixin";
 
+
+
+
+/*ejemplo animacion */
+.thecultureofbmx {
+    font-size: 4rem;
+    font-family: Arial, sans-serif;
+    position: relative;
+    animation-name: animaciontitulo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animaciontitulo {
+    0% {
+        color: #f44336;
+        transform: scale(1);
+    }
+
+    50% {
+        color: #9c27b0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        color: #4caf50;
+        transform: scale(1);
+    }
+}
+
+/*pagina index  fotos*/
+
+.fotosprincipales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fotosprincipales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*ejemplo variable*/
+.mybodytext {
+    font-family: sans-serif;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: $primary-color;
+
+}
+
+/* titulos header*/
+
+.thebmxpage {
+    font-family: cursive;
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    color: #4d3a68;
+    text-shadow: 1px 1px #ccc;
+}
+
+.thecultureofbmx {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    color: #d1cbd9;
+    text-shadow: 1px 1px #ccc;
+}
+
+/*config body para pagina "bicicletas"*/
+
+
+.fotosdebicis {
+    display: block;
+    text-align: center;
+}
+
+.bike1 {
+    height: 450px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.bike2 {
+    height: 450px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.titulobike1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #8c1eb4;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    @include borde(2px, red);
+    padding: 1rem;
+    background-color: #eee;
+}
+
+/*ejemplo con condicionales */
+.bike1descripcion {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: $primary-color;
+
+    @if $primary-color==blue {
+        color: white;
+    }
+
+    @else if $primary-color==red {
+        color: yellow;
+    }
+
+    @else {
+        color: black;
+    }
+}
+
+
+/*ejemplo mixin */
+.titulobike2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #8c1eb4;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    @include borde(2px, red);
+    padding: 1rem;
+    background-color: #eee;
+}
+
+.bike2descripcion {
+    background-color: blue;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+}
+
+/*config pagina contacto*/
+
+.enlancestitulo {
+    text-align: center;
+    color: antiquewhite;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding: 10px;
+}
+
+.titulocontacto {
+    font-size: 100px;
+}
+
+.enlancesbikes {
+    text-align: center;
+    font-size: 50px;
+}
+
+/*pagina fotos config */
+
+.fotosbmx {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.foto1 {
+    border: 1px solid #ccc;
+    height: 400px;
+    padding: 15px;
+    margin: 50px;
+}
+
+.foto2 {
+    border: 1px solid #ccc;
+    height: 400px;
+    padding: 15px;
+    margin: 50px;
+}
+
+.foto3 {
+    border: 1px solid #ccc;
+    width: 600px;
+    padding: 15px;
+    height: 500px;
+    margin: 50px;
+}
+
+.foto4 {
+    border: 1px solid #ccc;
+    width: 600px;
+    height: 500px;
+    padding: 15px;
+    margin: 50px;
+}
+
+/*pagina historias config*/
+
+.tituloprincipalbmx {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+.primerparrafobmx {
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+.segundoparrafobmx {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tercerparrafobmx {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #8c1eb4;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuartoparrafobmx {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dodgerblue;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fotohoffman {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fotohoffman1 {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+/*pagina deportistas config*/
+
+.seanburns {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: azure;
+}
+
+.seanburns img {
+    height: auto;
+    max-width: 100%;
+}
+
+.garretreynolds {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: azure;
+}
+
+.garretreynolds img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+.mikeaitken {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: azure;
+}
+
+.mikeaitken img {
+    height: auto;
+    max-width: 100%;
+}
+
+.markwebb {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: azure;
+}
+
+.markwebb img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+.backgroundriders {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.site-footer {
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.logobike img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/*pagina footer config*/
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.orderhere {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+}

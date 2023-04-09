@@ -129,6 +129,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding: 20px;
 }
 
 .foto1 {
@@ -259,8 +260,9 @@
 .backgroundriders {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 20px;
 }
-
 .site-footer {
     padding: 20px;
     background-color: aquamarine;

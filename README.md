@@ -1,2 +1,2 @@
-# Tercera pre entrega andres pachceco garcia
+# Tercera pre entrega andres pacheco garcia
 

@@ -16,6 +16,7 @@ html body header h1 {
   text-align: center;
 }
 html body header ul {
+  font-size: 40px;
   text-align: center;
   list-style-type: none;
   margin: 0;
@@ -60,13 +61,7 @@ html body header ul li {
     transform: scale(1);
   }
 }
-/*ejemplo hover*/
-.primerparrafobmx:hover {
-  color: rgb(167, 169, 19);
-}
-
-/*pagina index  fotos*/
-/*implementacion de grid*/
+/*pagina index  config*/
 .fotosprincipales {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -87,6 +82,11 @@ html body header ul li {
   padding: 20px;
   font-size: 22px;
   color: blue;
+}
+
+/*ejemplo hover*/
+.mybodytext:hover {
+  color: rgb(167, 169, 19);
 }
 
 /* titulos header*/
@@ -158,6 +158,26 @@ html body header ul li {
 }
 
 /*config pagina contacto*/
+.link-primary:active {
+  color: blue;
+  font-size: 100px;
+}
+
+.link-secondary:active {
+  color: gray;
+  font-size: 100px;
+}
+
+.link-success:active {
+  color: green;
+  font-size: 100px;
+}
+
+.link-danger:active {
+  color: red;
+  font-size: 100px;
+}
+
 .direcciones {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -228,10 +248,18 @@ html body header ul li {
 }
 
 /*pagina historias config*/
-.tituloprincipalbmx {
+.blockquote {
   text-align: center;
-  padding: 30px;
-  margin-bottom: 0%;
+  font-size: 40px;
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+}
+
+.blockquote-footer {
+  text-align: center;
+  font-size: 40px;
+  margin: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
 }

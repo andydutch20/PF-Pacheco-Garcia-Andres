@@ -9,6 +9,17 @@
 
 /*pagina index  config*/
 
+.iconobmx1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column; /* switch flex direction to column */
+    }
+}
+
 .fotosprincipales {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -22,7 +33,7 @@
 }
 
 /*ejemplo variable*/
-.mybodytext {
+.textoprincipalindex {
     font-family: sans-serif;
     background-color: white;
     text-align: center;
@@ -32,27 +43,18 @@
 }
 /*ejemplo hover*/
 
-.mybodytext:hover {
+.textoprincipalindex:hover {
     color: rgb(167, 169, 19);
 }
 
 /* titulos header*/
 
-.thebmxpage {
+.titulosdepaginas {
     font-family: cursive;
     font-size: 70px;
     font-weight: 100;
     text-align: center;
     color: #eeedf0;
-    text-shadow: 1px 1px #ccc;
-}
-
-.thecultureofbmx {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    font-weight: 100;
-    text-align: center;
-    color: #d1cbd9;
     text-shadow: 1px 1px #ccc;
 }
 
@@ -324,7 +326,7 @@
 }
 
 
-.backgroundriders {
+.leyendas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
@@ -336,18 +338,17 @@
 /*pagina footer config*/
 
 
-.site-footer {
+.footer {
     padding: 20px;
     background-color: aquamarine;
 }
 
 .logobike img {
-    text-align: center;
     display: block;
     margin: 0 auto;
 }
 
-.site-footer {
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;

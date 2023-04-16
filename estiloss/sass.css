@@ -38,30 +38,48 @@ html body header ul li {
 }
 
 /*ejemplo animacion */
-.thecultureofbmx {
+.bmxicono1 {
   font-size: 4rem;
   font-family: Arial, sans-serif;
   position: relative;
-  animation-name: animaciontitulo;
+  animation-name: move;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+  /* prevent overflow */
 }
 
-@keyframes animaciontitulo {
+/* Define the animation */
+@keyframes move {
   0% {
-    color: #f44336;
-    transform: scale(1);
+    transform: translateX(0);
   }
   50% {
-    color: #9c27b0;
-    transform: scale(1.2);
+    transform: translateX(50%);
   }
   100% {
-    color: #4caf50;
-    transform: scale(1);
+    transform: translateX(0);
+  }
+}
+/* Make the title responsive */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 24px;
   }
 }
 /*pagina index  config*/
+.iconobmx1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column; /* switch flex direction to column */
+  }
+}
 .fotosprincipales {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -75,7 +93,7 @@ html body header ul li {
 }
 
 /*ejemplo variable*/
-.mybodytext {
+.textoprincipalindex {
   font-family: sans-serif;
   background-color: white;
   text-align: center;
@@ -85,26 +103,17 @@ html body header ul li {
 }
 
 /*ejemplo hover*/
-.mybodytext:hover {
+.textoprincipalindex:hover {
   color: rgb(167, 169, 19);
 }
 
 /* titulos header*/
-.thebmxpage {
+.titulosdepaginas {
   font-family: cursive;
   font-size: 70px;
   font-weight: 100;
   text-align: center;
   color: #eeedf0;
-  text-shadow: 1px 1px #ccc;
-}
-
-.thecultureofbmx {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 50px;
-  font-weight: 100;
-  text-align: center;
-  color: #d1cbd9;
   text-shadow: 1px 1px #ccc;
 }
 
@@ -358,7 +367,7 @@ html body header ul li {
   max-width: 100%;
 }
 
-.backgroundriders {
+.leyendas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 20px;
@@ -366,18 +375,17 @@ html body header ul li {
 }
 
 /*pagina footer config*/
-.site-footer {
+.footer {
   padding: 20px;
   background-color: aquamarine;
 }
 
 .logobike img {
-  text-align: center;
   display: block;
   margin: 0 auto;
 }
 
-.site-footer {
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;

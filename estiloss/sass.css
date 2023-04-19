@@ -15,20 +15,6 @@ html body header {
 html body header h1 {
   text-align: center;
 }
-html body header ul {
-  font-size: 40px;
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #fff;
-}
-html body header ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
 
 /*ejemplo con condicionales */
 .bike1descripcion {
@@ -68,6 +54,139 @@ html body header ul li {
     font-size: 24px;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #d2d2d2;
+  color: white;
+}
+
+.navbar {
+  background-color: #219;
+  height: 48px;
+  padding: 20px 20px;
+  position: relative;
+}
+
+.checkbox,
+.icomenu {
+  position: absolute;
+  top: 12px;
+  width: 24px;
+  right: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.checkbox,
+.icocruz {
+  position: absolute;
+  top: 12px;
+  width: 24px;
+  right: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.icocruz {
+  pointer-events: none;
+  font-size: 24px;
+}
+
+.icomenu {
+  pointer-events: none;
+  font-size: 24px;
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+.icocruz {
+  display: none;
+}
+
+.checkbox:checked ~ .icomenu {
+  display: none;
+}
+
+.checkbox:checked ~ .icocruz {
+  display: block;
+}
+
+.menu {
+  width: 200px;
+  position: absolute;
+  top: -105px;
+  z-index: -1;
+  right: 0px;
+  display: none;
+  transition: 300ms;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+  background-color: #234567;
+  display: block;
+  padding: 10px 12px;
+}
+
+.menu li a:hover {
+  background-color: #456789;
+}
+
+.checkbox:checked ~ .menu {
+  display: block;
+  top: 48px;
+}
+
+.checkbox:checked ~ .icocruz {
+  display: block;
+}
+
+/* Mobile */
+.menu li a {
+  height: 48px;
+  padding: 14px 12px 6px;
+}
+
+.checkbox,
+.icomenu .icocruz {
+  display: block;
+}
+
+.menu {
+  display: none;
+}
+
+/* Tablet and Desktop */
+@media (min-width: 560px) {
+  .checkbox,
+  .icomenu .icocruz {
+    display: none;
+  }
+  .menu {
+    top: 0;
+    z-index: 1;
+    width: unset;
+    height: 48px;
+    display: flex;
+  }
+  .menu li a {
+    height: unset;
+    padding: 14px 18px;
+  }
+}
 /*pagina index  config*/
 .iconobmx1 {
   display: flex;
@@ -77,7 +196,8 @@ html body header ul li {
 
 @media screen and (max-width: 768px) {
   body {
-    flex-direction: column; /* switch flex direction to column */
+    flex-direction: column;
+    /* switch flex direction to column */
   }
 }
 .fotosprincipales {

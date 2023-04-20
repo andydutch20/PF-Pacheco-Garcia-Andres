@@ -6,475 +6,513 @@
 @import "navbarhamburgesa";
 
 
-    /*pagina index  config*/
 
-    .iconobmx1 {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
+
+/*body css*/
+
+body {
+    margin: 0%;
+    margin-bottom: 500px;
+}
+/*pagina index  config*/
+
+.iconobmx1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
     }
+}
 
-    @media screen and (max-width: 768px) {
-        body {
-            flex-direction: column;
-            /* switch flex direction to column */
-        }
-    }
+.fotosprincipales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
 
-    .fotosprincipales {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 20px;
-
-    }
-
-    .fotosprincipales img {
-        max-width: 100%;
-        height: auto;
-    }
+.fotosprincipales img {
+    max-width: 100%;
+    height: auto;
+    z-index: -1; 
+}
 
 
-    /*ejemplo variable*/
-    .textoprincipalindex {
-        font-family: sans-serif;
-        background-color: white;
-        text-align: center;
-        padding: 20px;
-        font-size: 22px;
-        color: $primary-color;
-    }
+/*ejemplo variable*/
+.textoprincipalindex {
+    font-family: sans-serif;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: $primary-color;
+}
 
-    /*ejemplo hover*/
+/*ejemplo hover*/
 
-    .textoprincipalindex:hover {
-        color: rgb(167, 169, 19);
-    }
+.textoprincipalindex:hover {
+    color: rgb(167, 169, 19);
+}
 
-    /* titulos header*/
+/* titulos header*/
 
-    .titulosdepaginas {
-        font-family: cursive;
-        font-size: 70px;
-        font-weight: 100;
-        text-align: center;
-        color: #eeedf0;
-        text-shadow: 1px 1px #ccc;
-    }
+.titulosdepaginas {
+    font-family: cursive;
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    color: #eeedf0;
+    text-shadow: 1px 1px #ccc;
+}
 
-    /*config body para pagina "bicicletas"*/
+/*config body para pagina "bicicletas"*/
 
 
-    .fotosdebicis {
-        display: block;
-        text-align: center;
-    }
+.fotosdebicis {
+    display: block;
+    text-align: center;
+}
 
-    .bike1 {
-        height: 450px;
-        padding: 10px;
-        margin: 10px;
-        max-width: 100%;
-    }
+.bike1 {
+    height: 450px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%;
+}
 
-    .bike2 {
-        height: 450px;
-        padding: 10px;
-        margin: 10px;
-        max-width: 100%;
-    }
+.bike2 {
+    height: 450px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%;
+}
 
-    .bike2descripcion {
-        background-color: blue;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        color: white;
-    }
+.bike2descripcion {
+    background-color: blue;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+}
 
-    /*ejemplo mixin */
-    .titulobike1 {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        background-color: #8c1eb4;
-        margin-top: 0px;
-        font-weight: bold;
-        font-size: 16px;
-        @include borde(2px, red);
-        padding: 1rem;
-        background-color: #eee;
-    }
+/*ejemplo mixin */
+.titulobike1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #8c1eb4;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    @include borde(2px, red);
+    padding: 1rem;
+    background-color: #eee;
+}
 
-    .titulobike2 {
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        background-color: #8c1eb4;
-        margin-top: 0px;
-        font-weight: bold;
-        font-size: 16px;
-        @include borde(2px, red);
-        padding: 1rem;
-        background-color: #eee;
-    }
+.titulobike2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #8c1eb4;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    @include borde(2px, red);
+    padding: 1rem;
+    background-color: #eee;
+}
 
 
 
-    /*config pagina contacto*/
+/*config pagina contacto*/
 
-    .link-primary:active {
-        color: blue;
-        font-size: 100px;
-    }
+.link-primary:active {
+    color: blue;
+    font-size: 100px;
+}
 
-    .link-secondary:active {
-        color: gray;
-        font-size: 100px;
-    }
+.link-secondary:active {
+    color: gray;
+    font-size: 100px;
+}
 
-    .link-success:active {
-        color: green;
-        font-size: 100px;
-    }
+.link-success:active {
+    color: green;
+    font-size: 100px;
+}
 
-    .link-danger:active {
-        color: red;
-        font-size: 100px;
-    }
+.link-danger:active {
+    color: red;
+    font-size: 100px;
+}
 
 
 
+.direcciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.direcciones address {
+    font-size: 20px;
+    color: rgb(202, 201, 201);
+}
+
+@media screen and (min-width: 768px) {
     .direcciones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin: 0 auto;
-        font-size: 30px;
-        font-weight: bold;
-        padding: 20px;
-        font-family: Arial, sans-serif;
-        line-height: 1.5;
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 40px;
+        padding: 70px;
     }
 
     .direcciones address {
-        font-size: 20px;
-        color: rgb(202, 201, 201);
+        font-size: 25px;
+    }
+}
+
+
+.enlancestitulo {
+    text-align: center;
+    color: gold;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding: 10px;
+}
+
+.titulocontacto {
+    font-size: 100px;
+    text-align: center;
+}
+
+
+
+/*pagina fotos config */
+
+.fotosbmx {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.foto1 {
+    height: auto;
+    max-width: 100%;
+}
+
+.foto2 {
+    height: auto;
+    max-width: 100%;
+}
+
+.foto3 {
+    height: auto;
+    max-width: 100%;
+}
+
+.foto4 {
+    height: auto;
+    max-width: 100%;
+}
+
+/*pagina historias config*/
+
+.blockquote {
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+.blockquote-footer {
+    text-align: center;
+    font-size: 40px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+
+.primerparrafobmx {
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+.segundoparrafobmx {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tercerparrafobmx {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #8c1eb4;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuartoparrafobmx {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dodgerblue;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*uso de flexbox*/
+
+.fotohoffman {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fotohoffman1 {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+/*pagina deportistas config*/
+
+.seanburns {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: azure;
+}
+
+.seanburns img {
+    height: auto;
+    max-width: 100%;
+}
+
+.garretreynolds {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: azure;
+}
+
+.garretreynolds img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+.mikeaitken {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: azure;
+}
+
+.mikeaitken img {
+    height: auto;
+    max-width: 100%;
+}
+
+.markwebb {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: azure;
+}
+
+.markwebb img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+.leyendas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    gap: 20px;
+}
+
+
+
+/*pagina footer config*/
+
+
+.footer {
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.logobike img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.orderhere {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+}
+
+/* Media query para  mobile */
+@media screen and (max-width: 480px) {
+    .fotosprincipales {
+        display: block;
+        padding: 0;
     }
 
-    @media screen and (min-width: 768px) {
-        .direcciones {
-            grid-template-columns: repeat(4, 1fr);
-            font-size: 40px;
-            padding: 70px;
-        }
-
-        .direcciones address {
-            font-size: 25px;
-        }
+    .fotosprincipales img {
+        width: 100%;
     }
 
+    .textoprincipalindex {
+        font-size: 18px;
+        padding: 10px;
+    }
 
+    .titulosdepaginas {
+        font-size: 40px;
+    }
 
-    /*********************************************/
-    .enlancestitulo {
+    .bike1,
+    .bike2 {
+        height: auto;
+        max-height: 400px;
+        margin: 10px auto;
+    }
+
+    .direcciones {
+        grid-template-columns: 1fr;
         text-align: center;
-        color: gold;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .enlancestitulo {
+        font-size: medium;
+        padding: 5px;
+    }
+
+    .titulocontacto {
+        font-size: 60px;
+    }
+
+    .fotosbmx {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .foto1,
+    .foto2,
+    .foto3,
+    .foto4 {
+        margin: 0 auto;
+    }
+
+    .blockquote,
+    .blockquote-footer,
+    .primerparrafobmx,
+    .segundoparrafobmx,
+    .tercerparrafobmx,
+    .cuartoparrafobmx {
+        font-size: 24px;
+        padding: 10px;
+    }
+}
+
+/* For tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .fotosprincipales {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
+    .textoprincipalindex {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .titulosdepaginas {
+        font-size: 60px;
+    }
+
+    .bike1,
+    .bike2 {
+        height: auto;
+        max-height: 500px;
+        margin: 10px;
+    }
+
+    .direcciones {
+        grid-template-columns: 1fr 1fr;
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    .enlancestitulo {
         font-size: larger;
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
         padding: 10px;
     }
 
     .titulocontacto {
-        font-size: 100px;
-        text-align: center;
+        font-size: 80px;
     }
-
-
-
-    /*pagina fotos config */
 
     .fotosbmx {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         padding: 20px;
     }
 
-    .foto1 {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .foto2 {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .foto3 {
-        height: auto;
-        max-width: 100%;
-    }
-
+    .foto1,
+    .foto2,
+    .foto3,
     .foto4 {
-        height: auto;
-        max-width: 100%;
+        margin: 10px;
     }
 
-    /*pagina historias config*/
-
-    .blockquote {
-        text-align: center;
-        font-size: 40px;
-        margin: 0px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: aliceblue;
-    }
-
-    .blockquote-footer {
-        text-align: center;
-        font-size: 40px;
-        margin: 0px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: aliceblue;
-    }
-
-
-    .primerparrafobmx {
-        text-align: center;
-        padding: 30px;
-        margin: 0px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: aliceblue;
-    }
-
-    .segundoparrafobmx {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: darkgoldenrod;
-        text-align: center;
-        padding: 30px;
-        margin: 0px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .tercerparrafobmx {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #8c1eb4;
-        text-align: center;
-        padding: 30px;
-        margin: 0px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
+    .blockquote,
+    .blockquote-footer,
+    .primerparrafobmx,
+    .segundoparrafobmx,
+    .tercerparrafobmx,
     .cuartoparrafobmx {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: dodgerblue;
-        text-align: center;
-        padding: 30px;
-        margin: 0px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 30px;
+        padding: 20px;
     }
+}
 
-    /*uso de flexbox*/
-
-    .fotohoffman {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .fotohoffman1 {
-        max-width: 100%;
-        max-height: 100%;
-        -o-object-fit: contain;
-        object-fit: contain;
-    }
-
-    /*pagina deportistas config*/
-    /*implementacion de grid*/
-
-    .seanburns {
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        color: azure;
-    }
-
-    .seanburns img {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .garretreynolds {
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        color: azure;
-    }
-
-    .garretreynolds img {
-        height: auto;
-        max-width: 100%;
-    }
-
-
-    .mikeaitken {
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        color: azure;
-    }
-
-    .mikeaitken img {
-        height: auto;
-        max-width: 100%;
-    }
-
-    .markwebb {
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-        color: azure;
-    }
-
-    .markwebb img {
-        height: auto;
-        max-width: 100%;
-    }
-
-
-    .leyendas {
-        display: grid;
+/* For desktops */
+@media screen and (min-width: 769px) {
+    .fotosprincipales {
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;
-        gap: 20px;
     }
 
-
-
-    /*pagina footer config*/
-
-
-    .footer {
-        padding: 20px;
-        background-color: aquamarine;
+    .textoprincipalindex {
+        font-size: 22px;
+        padding: 30px;
     }
 
-    .logobike img {
-        display: block;
-        margin: 0 auto;
+    .titulosdepaginas {
+        font-size: 70px;
     }
-
-    .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 400px;
-    }
-
-    .orderhere {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 20px;
-        font-weight: 100;
-        text-align: left;
-    }
-
-    /* mobile query css */
-
-    @media (max-width: 480px) {
-
-        .header {
-            padding: 10px;
-        }
-
-        .ul {
-            font-size: 16px;
-        }
-
-
-        .mybodytext {
-            font-size: 18px;
-            padding: 10px;
-        }
-
-        .site-footer {
-            height: auto;
-            padding: 10px;
-        }
-
-        .thebmxpage {
-            font-size: 40px;
-        }
-
-        .enlancestitulo {
-            font-size: 40px;
-        }
-
-        .enlancesbikes {
-            font-size: 40px;
-        }
-
-        .thecultureofbmx {
-            font-size: 30px;
-        }
-
-        .contact {
-            font-size: 24px;
-        }
-
-
-
-        .titulobike1,
-        .titulobike2,
-        .bike1descripcion,
-        .bike2descripcion {
-            font-size: 14px;
-        }
-
-
-
-        .tituloprincipalbmx {
-            font-size: 24px;
-            padding: 10px;
-        }
-
-    }
-
-
-    @media (min-width: 480px) {
-
-        .header {
-            padding: 20px;
-        }
-
-        .ul {
-            font-size: 20px;
-        }
-
-        .mybodytext {
-            font-size: 22px;
-            padding: 20px;
-        }
-
-        .site-footer {
-            height: 400px;
-            padding: 20px;
-        }
-
-        .thebmxpage {
-            font-size: 70px;
-        }
-
-        .enlancestitulo {
-            font-size: 40px;
-        }
-
-        .enlancesbikes {
-            font-size: 50px;
-        }
-
-        .thecultureofbmx {
-            font-size: 50px;
-        }
-
-        .contact {
-            font-size: 30px;
-        }
-
-
-        .titulobike1,
-        .titulobike2,
-        .bike1descripcion,
-        .bike2descripcion {
-            font-size: 16px;
-        }
-    }
+}

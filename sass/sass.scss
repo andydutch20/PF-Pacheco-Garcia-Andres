@@ -60,7 +60,6 @@ body {
 /* titulos header*/
 
 .titulosdepaginas {
-    font-family: cursive;
     font-size: 100px;
     font-weight: 100;
     text-align: center;
@@ -71,26 +70,25 @@ body {
 /*config body para pagina "bicicletas"*/
 
 
-.fotosdebicis {
-    display: block;
-    text-align: center;
-}
-
-.bike1 {
-    height: 450px;
-    padding: 10px;
-    margin: 10px;
-    max-width: 100%;
-}
-
+.bike1,
 .bike2 {
     height: 450px;
     padding: 10px;
-    margin: 10px;
-    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.bike1descripcion {
+    padding: 15px;
+    background-color: blue;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+
+}
 .bike2descripcion {
+    padding: 15px;
     background-color: blue;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: white;
@@ -98,25 +96,27 @@ body {
 
 /*ejemplo mixin */
 .titulobike1 {
+    text-align: center;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: #8c1eb4;
     margin-top: 0px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 25px;
     @include borde(2px, red);
     padding: 1rem;
     background-color: #eee;
+    margin: 10px;
 }
 
 .titulobike2 {
+    text-align: center;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: #8c1eb4;
     margin-top: 0px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 25px;
     @include borde(2px, red);
     padding: 1rem;
     background-color: #eee;
+    margin: 10px;
 }
 
 
@@ -156,35 +156,30 @@ body {
     line-height: 1.5;
 }
 
-.direcciones address {
-    font-size: 15px;
-    color: rgb(202, 201, 201);
-}
 
 @media screen and (min-width: 768px) {
     .direcciones {
         grid-template-columns: repeat(4, 1fr);
-        font-size: 40px;
+        font-size: 30px;
         padding: 70px;
     }
 
     .direcciones address {
-        font-size: 25px;
+        font-size: 20px;
+        color: rgb(202, 201, 201);
     }
 }
 
 
-.enlancestitulo {
+.titulocontacto {
     text-align: center;
-    color: rgb(19, 19, 16);
+    color: rgb(138, 21, 192);
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     padding: 10px;
+    font-size: 45px;
 }
 
-.titulocontacto {
-    font-size: 70px;
-    text-align: center;
-}
+
 
 
 
